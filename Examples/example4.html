@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("li").click(function(){
+        $(this).slideDown(2000).hide();
+    });
+    $("button").click(function(){
+        $("li").each(function(){
+            console.log($(this).text());
+            $(this).show();
+        })
+    })
+});
+</script>
+<title>Example 4</title>
+</head>
+<body>
+
+<h1>Our List</h1>
+<li>Item One</li>
+<li>Item Two</li>
+<li>Item Three</li>
+<li>Item Four</li>
+
+<button>Reset List</p>
+</body>
+</html>
+
