@@ -3,21 +3,19 @@
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>
-/* $(document).ready(function(){
-    $("h1, p").addClass("blue");
-    $("div").addClass("important");
-}); */
+$(document).ready(function(){
+    h = $("h1").text();
+    p = $("p").text();
+    d = $("div").text();
+    /*$("p").each(function(){
+         console.log($(this).text())
+    }); */   
+    console.log(h);
+    console.log(p);
+    console.log(d);
+    /* $("div").text("Substantially changed text"); */
+});
 </script>
-<style>
-.important {
-    font-weight: bold;
-    font-size: xx-large;
-}
-
-.blue {
-    color: blue;
-}
-</style>
 </head>
 <body>
 

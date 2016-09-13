@@ -4,9 +4,13 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-    $("button").click(function(){
+    $("#b1").click(function(){
         $("h1, p").addClass("blue");
         $("div").addClass("important");
+    });
+    $("#b2").click(function(){
+        $("h1, p").removeClass("blue");
+        $("div").removeClass("important");
     });
 });
 </script>
@@ -31,7 +35,8 @@ $(document).ready(function(){
 
 <div>This is some important text!</div><br>
 
-<button>Add classes to elements</button>
+<button id="b1">Add classes to elements</button>
+<button id="b2">Remove classes from elements</button>
 
 </body>
 </html>
