@@ -5,11 +5,12 @@
 <script>
 $(document).ready(function(){
     $("li").click(function(){
+        console.log("Remove " + $(this).text());
         $(this).hide();
     });
     $("button").click(function(){
         $("li").each(function(){
-            console.log($(this).text());
+            console.log("Add " + $(this).text());
             $(this).show();
         })
     })
